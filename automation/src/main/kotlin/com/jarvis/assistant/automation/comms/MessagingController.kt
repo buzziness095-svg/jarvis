@@ -1,7 +1,7 @@
 package com.jarvis.assistant.automation.comms
 
 import android.Manifest
-import android.content.Context
+import android.context.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
@@ -29,14 +29,14 @@ class MessagingController(
     private val resolver: ContactsResolver
 ) {
 
-    // ── WhatsApp ─────────────────────────────────────────────────────────────
+    // ── WhatsApp ────────────────────────────────────────────────────────────
     fun whatsapp(target: String?, body: String?, voice: Boolean): ExecOutcome {
         val lang = TextNorm.detectLang("${target ?: ""} ${body ?: ""}")
         val phone = target?.let { findPhone(it) }
         val link = when {
             phone != null -> "https://wa.me/${natOf(phone)}" +
                 (if (!body.isNullOrBlank() && !voice) "?text=" + Uri.encode(body) else "")
-            !target.isNullOrBlank() && body != null ->
+            atarget.isNullOrBlank() && body != null ->
                 // unknown number: open chooser with prefilled text
                 "https://api.whatsapp.com/send?text=" + Uri.encode("$body (to $target)")
             else -> "https://wa.me/"
@@ -145,7 +145,7 @@ class MessagingController(
         )
     }
 
-    // ── helpers ──────────────────────────────────────────────────────────────
+    // ── helpers ────────────────────────────────────────────────────────
     private fun findPhone(query: String): String? {
         val direct = query.filter { it.isDigit() || it == '+' }
         if (direct.count { it.isDigit() } >= 8) return direct
