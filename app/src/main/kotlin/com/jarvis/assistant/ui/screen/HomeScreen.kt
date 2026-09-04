@@ -113,7 +113,9 @@ fun HomeScreen(vm: JarvisViewModel, nav: NavController) {
             Button(
                 onClick = { vm.talkNow() },
                 colors = ButtonDefaults.buttonColors(containerColor = JarvisCyan, contentColor = androidx.compose.ui.graphics.Color(0xFF02131B))
-            ) { Text(stringResource(R.string.btn_talk)) }
+            ) {
+                Text(stringResource(R.string.btn_talk))
+            }
             if (state == AssistantState.SLEEPING) {
                 OutlinedButton(onClick = { vm.startJarvis() }) { Text(stringResource(R.string.btn_start)) }
             } else {
