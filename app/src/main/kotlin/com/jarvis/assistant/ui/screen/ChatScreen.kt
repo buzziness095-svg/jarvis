@@ -69,7 +69,7 @@ fun ChatScreen(vm: JarvisViewModel) {
                 .weight(1f)
                 .fillMaxWidth()
                 .padding(horizontal = 14.dp),
-            verticalArrangement = Arrangement.spacedBy(10.dp)
+            verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
             if (transcript.isEmpty()) {
                 item {
@@ -101,7 +101,7 @@ fun ChatScreen(vm: JarvisViewModel) {
                 .fillMaxWidth()
                 .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             OutlinedTextField(
                 value = input,
