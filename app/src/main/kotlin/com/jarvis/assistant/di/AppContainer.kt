@@ -41,10 +41,10 @@ class AppContainer(appContext: Context, bakedApiKey: String?) {
 
     val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default + SelfHealing.handler)
 
-    // ── AI layer ─────────────────────────────────────────────────────────────
+    // ── AI layer ──────────────────────────────────────────────────────────────
     val gemini: GeminiClient = GeminiClient(settings)
 
-    // ── voice pipeline ───────────────────────────────────────────────────────
+    // ── voice pipeline ────────────────────────────────────────────────────────
     val stt: SttEngine = SttEngine(app)
     val gate: AudioGate = AudioGate(app)
     val wake: SttWakeEngine = SttWakeEngine(app, settings, gate, stt)

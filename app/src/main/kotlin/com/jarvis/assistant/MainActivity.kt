@@ -68,7 +68,7 @@ class MainActivity : ComponentActivity() {
 
         lifecycleScope.launch {
             PermissionRequests.pending.collect { perms ->
-                runCatching { permissionLauncher.launch(perms) }
+                runCatching { permissionLauncher.launch(perps) }
             }
         }
 
