@@ -42,13 +42,13 @@
     <string name="perm_optional">Optional power-up</string>
 
     <!-- settings -->
-    <string name="settings_ai">AI & Gemini</string>
+    <string name="settings_ai">AI &amp; Gemini</string>
     <string name="settings_api_key">Gemini API key</string>
     <string name="settings_api_key_hint">Accepts AIza… (legacy) and AQ.… (new AI-Studio) keys. Stored AES-256/Keystore encrypted.</string>
     <string name="settings_test_key">Test key</string>
     <string name="settings_base_url">API base URL</string>
     <string name="settings_model">Model</string>
-    <string name="settings_model_auto">auto (probe & remember)</string>
+    <string name="settings_model_auto">auto (probe &amp; remember)</string>
     <string name="settings_voice">Voice</string>
     <string name="settings_voice_backend">TTS engine</string>
     <string name="settings_language">Languages</string>
@@ -56,7 +56,7 @@
     <string name="settings_reply_language">Reply language</string>
     <string name="settings_wake">Wake word</string>
     <string name="settings_wake_enable">Always listening (“Wake up Jarvis”)</string>
-    <string name="settings_wake_info">Default triggers: “Wake up Jarvis”, “Hey Jarvis", જારવિસ (any mis-hearing tolerated). “Shutdown Jarvis” sleeps everything.</string>
+    <string name="settings_wake_info">Default triggers: “Wake up Jarvis”, “Hey Jarvis”, જારવિસ (any mis-hearing tolerated). “Shutdown Jarvis” sleeps everything.</string>
     <string name="settings_custom_wake">Extra wake phrase (optional)</string>
     <string name="settings_sensitivity">Sensitivity</string>
     <string name="settings_power">Battery profile</string>
@@ -78,12 +78,12 @@
     <string name="cmd_hint">Try any of these after “Wake up Jarvis” (or tap-to-talk)</string>
 
     <!-- diagnostics -->
-    <string name="diag_title">Self-healing & logs</string>
+    <string name="diag_title">Self-healing &amp; logs</string>
     <string name="diag_logs">Recent engine log</string>
     <string name="diag_last_crash">Last uncaught error</string>
     <string name="diag_no_crash">No crashes recorded ✨</string>
     <string name="diag_safe_mode">The app crash-looped and entered SAFE MODE. Auto-restart is off.</string>
-    <string name="diag_repair">Repair & re-enable</string>
+    <string name="diag_repair">Repair &amp; re-enable</string>
     <string name="diag_key_storage">Hardware key storage: %1$s</string>
 
     <!-- memory -->
