@@ -44,7 +44,7 @@ object Lexicon {
         "gps" to listOf("gps", "location", "લોકેશન", "लोकेशन", "track my phone", "map location"),
         "brightness" to listOf("brightness", "બ્રાઇટનેસ", "चमक", "roshni", "તેજ વધારો", "screen light level"),
         "volume" to listOf("volume", "અવાજ", "आवाज़", "awaaz", "aawaz", "sound level"),
-        "dnd" to listOf("dnd", "do not disturb", "ધ્યન ભંગ", "नॉट डिस्टर्ब", "disturb mode"),
+        "dnd" to listOf("dnd", "do not disturb", "ધ્યન ભંગ", "नॉट डिस्टरਬ", "disturb mode"),
         "silent" to listOf("silent", "શાંત", "shaant", "quiet mode", "chup chap mode", "રિંગ બંધ"),
         "airplane" to listOf("airplane", "flight mode", "એરપ્લેન મોડ", "एयरप्लेन", "aeroplane mode"),
         "rotation" to listOf("rotation", "auto rotate", "screen rotate", "રોટેશન", "ઑરિએન્ટેશન", "लॉक घुमाओ"),

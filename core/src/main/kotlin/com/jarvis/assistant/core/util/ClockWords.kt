@@ -11,8 +11,7 @@ import java.util.Calendar
 object ClockWords {
 
     data class TimeGuess(
-        val hour: Int,
-        val minute: Int,
+        val hour: Int, val minute: Int,
         val amPmResolved: Boolean,
         val dayOffset: Int = 0
     )
